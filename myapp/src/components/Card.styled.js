@@ -1,6 +1,9 @@
 import styled from "styled-components";
 export const Card = styled.div`
+  justify-content: ${(props) => props.gridjc};
   float: ${(props) => props.float};
+  line-height: ${(props) => props.lh};
+  border-bottom: ${(props) => props.bdbm};
   grid-template-columns: ${(props) => props.gridC};
   grid-template-rows: ${(props) => props.gridR};
   font-family: ${(props) => props.font};
@@ -29,4 +32,11 @@ export const Card = styled.div`
   -o-transform: rotate(${(props) => props.rdeg});
   transform: rotate(${(props) => props.rdeg});
   box-sizing: border-box;
+  &:hover {
+    color: ${(props) => props.hvcl};
+    background-color: ${(props) => props.hvbg};
+    font-size: ${(props) => props.hvfs};
+    height: ${(props) => props.hvheight};
+    width: ${(props) => props.hvwidth};
+  }
 `;

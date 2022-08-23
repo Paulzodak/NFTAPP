@@ -1,7 +1,10 @@
 import styled from "styled-components";
-export const Button = styled.button`
+export const CardList = styled.li`
+  list-style-type: ${(props) => props.ltype};
+  justify-content: ${(props) => props.gridjc};
   float: ${(props) => props.float};
-  border-radius: ${(props) => props.br};
+  line-height: ${(props) => props.lh};
+  border-bottom: ${(props) => props.bdbm};
   grid-template-columns: ${(props) => props.gridC};
   grid-template-rows: ${(props) => props.gridR};
   font-family: ${(props) => props.font};
@@ -10,6 +13,7 @@ export const Button = styled.button`
   color: ${(props) => props.cl};
   margin: ${(props) => props.mg};
   padding: ${(props) => props.pd};
+  vertical-align: ${(props) => props.va};
   border: ${(props) => props.bd};
   height: ${(props) => props.height};
   width: ${(props) => props.width};
@@ -18,6 +22,7 @@ export const Button = styled.button`
   overflow-y: ${(props) => props.ovfy};
   overflow-x: ${(props) => props.ovfx};
   top: ${(props) => props.pstp};
+  border-radius: ${(props) => props.br};
   right: ${(props) => props.psrt};
   bottom: ${(props) => props.psbt};
   left: ${(props) => props.pslf};
@@ -32,6 +37,7 @@ export const Button = styled.button`
     color: ${(props) => props.hvcl};
     background-color: ${(props) => props.hvbg};
     font-size: ${(props) => props.hvfs};
-    border: ${(props) => props.hvbd};
+    height: ${(props) => props.hvheight};
+    width: ${(props) => props.hvwidth};
   }
 `;

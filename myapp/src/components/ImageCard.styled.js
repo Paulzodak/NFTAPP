@@ -23,6 +23,13 @@ export const ImageCard = styled.img`
   left: ${(props) => props.pslf};
   display: ${(props) => props.dp};
   text-align: ${(props) => props.ta};
+  &:hover {
+    color: ${(props) => props.hvcl};
+    background-color: ${(props) => props.hvbg};
+    font-size: ${(props) => props.hvfs};
+    height: ${(props) => props.hvheight};
+    width: ${(props) => props.hvwidth};
+  }
   -webkit-transform: rotate(${(props) => props.rdeg});
   -moz-transform: rotate(${(props) => props.rdeg});
   -o-transform: rotate(${(props) => props.rdeg});
