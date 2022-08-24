@@ -3,6 +3,7 @@ import { Card } from "../../UI/Card.styled";
 import Headlines from "../../UI/Headlines";
 import CommentItem from "./CommentItem";
 import CommentItem2 from "./CommentItem2";
+import styled from "styled-components";
 import "./Transition.css";
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 

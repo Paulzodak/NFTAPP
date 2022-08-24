@@ -9,6 +9,7 @@ const CommentItem = ({ element, color }) => {
         pd={"1rem"}
         // bd={"1px solid red"}
         mg={"8% 0%"}
+        br={"inherit"}
         height={"75%"}
       >
         <ImageCard
