@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "../../Card.styled";
+import { Card } from "../../UI/Card.styled";
 import Grid1 from "./Grid1";
 import Grid2 from "./Grid2";
 import Grid3 from "./Grid3";

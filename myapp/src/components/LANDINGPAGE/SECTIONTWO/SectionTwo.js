@@ -1,8 +1,8 @@
 import React from "react";
-import { Card } from "../../Card.styled";
+import { Card } from "../../UI/Card.styled";
 import Grid1 from "./Grid1";
 import Grid2 from "./Grid2";
-const SectionTwo = ({ UI, styles }) => {
+const SectionTwo = ({ UI, styles, content }) => {
   return (
     <>
       <Card
@@ -13,7 +13,7 @@ const SectionTwo = ({ UI, styles }) => {
         height={"24rem"}
       >
         <Grid1 UI={UI} styles={styles} />
-        <Grid2 UI={UI} />
+        <Grid2 styles={styles} content={content} UI={UI} />
       </Card>
     </>
   );

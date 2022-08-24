@@ -1,6 +1,6 @@
 import React from "react";
-import { ImageCard } from "../../ImageCard.styled";
-import { Card } from "../../Card.styled";
+import { ImageCard } from "../../UI/ImageCard.styled";
+import { Card } from "../../UI/Card.styled";
 const Grid2 = ({ content }) => {
   return (
     <Card bd={"0px solid red"}>

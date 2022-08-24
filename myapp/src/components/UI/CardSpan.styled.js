@@ -1,5 +1,5 @@
 import styled from "styled-components";
-export const Card = styled.div`
+export const CardSpan = styled.span`
   justify-content: ${(props) => props.gridjc};
   float: ${(props) => props.float};
   line-height: ${(props) => props.lh};

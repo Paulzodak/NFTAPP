@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "../../Card.styled";
+import { Card } from "../../UI/Card.styled";
 const Grid3 = ({ content, styles }) => {
   return (
     <Card bd={"0px solid red"}>

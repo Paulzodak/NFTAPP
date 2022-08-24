@@ -4,12 +4,14 @@ import SectionOne from "./SECTIONONE/SectionOne";
 import SectionTwo from "./SECTIONTWO/SectionTwo";
 import SectionSix from "./SECTIONSIX/SectionSix";
 import Footer from "./FOOTER/Footer";
+import SectionFive from "./SECTIONFIVE/SectionFive";
 const LandingPage = ({ content, styles, UI }) => {
   return (
     <>
       <NavBar styles={styles} content={content} />
       <SectionOne styles={styles} content={content} />
       <SectionTwo UI={UI} styles={styles} content={content} />
+      <SectionFive UI={UI} styles={styles} content={content} />
       <SectionSix UI={UI} styles={styles} content={content} />
       <Footer UI={UI} styles={styles} content={content} />
     </>

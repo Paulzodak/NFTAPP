@@ -1,7 +1,7 @@
 import LandingPage from "./components/LANDINGPAGE/LandingPage";
 import "./App.css";
 import { useState } from "react";
-import { Card } from "./components/Card.styled";
+import { Card } from "./components/UI/Card.styled";
 import searchIcon from "./images/Navbar/Combined-Shape.svg";
 import exportIcon from "./images/Navbar/Group 7.svg";
 import lightning from "./images/sectionone/lightning.svg";
@@ -23,6 +23,14 @@ import twitterIcon from "./images/twittericon.svg";
 import LinkedInIcon from "./images/LinkedinIcon.svg";
 import InstagramIcon from "./images/Instagramicon.svg";
 
+import AuctioNft1 from "./images/auctions/card1.svg";
+import AuctioNft2 from "./images/auctions/card2.svg";
+import AuctioNft3 from "./images/auctions/card3.svg";
+
+import JediPicture from "./images/drawjedi.svg";
+import picture44 from "./images/44.svg";
+import YellowGirlPicture from "./images/Yellowgirl.svg";
+
 const App = () => {
   const UI = {
     NextArrow: NextArrow,
@@ -37,6 +45,9 @@ const App = () => {
     twitterIcon: twitterIcon,
     LinkedInIcon: LinkedInIcon,
     InstagramIcon: InstagramIcon,
+    JediPicture: JediPicture,
+    picture44: picture44,
+    YellowGirlPicture: YellowGirlPicture,
   };
   const styles = {
     fonts: {
@@ -49,7 +60,7 @@ const App = () => {
   };
   const Contents = {
     NavBarContents: [
-      "A.",
+      "A",
       "Discover",
       "MarketPlace",
       "Pro",
@@ -58,7 +69,50 @@ const App = () => {
       "Connect Wallet",
       exportIcon,
     ],
-
+    trendingAuctions: [
+      {
+        id: 0,
+        tag: "A",
+        day: 74,
+        user: "@Mark Rise",
+        RemainingTime: "15h : 55m : 08s",
+        value: 15.97,
+        bid: "HighestBid",
+        image: AuctioNft1,
+        active: {
+          likes: "63.1K",
+          share: "24.6K",
+        },
+      },
+      {
+        id: 1,
+        tag: "A",
+        day: 74,
+        user: "@Mark Rise",
+        RemainingTime: "15h : 55m : 08s",
+        value: 15.97,
+        bid: "HighestBid",
+        image: AuctioNft2,
+        active: {
+          likes: "63.1K",
+          share: "24.6K",
+        },
+      },
+      {
+        id: 2,
+        tag: "A",
+        day: 74,
+        user: "@Mark Rise",
+        RemainingTime: "15h : 55m : 08s",
+        value: 15.97,
+        bid: "HighestBid",
+        image: AuctioNft3,
+        active: {
+          likes: "63.1K",
+          share: "24.6K",
+        },
+      },
+    ],
     SectionOneContents: [
       lightning,
       "Started",

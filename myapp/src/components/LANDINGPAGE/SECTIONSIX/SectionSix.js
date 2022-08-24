@@ -1,7 +1,7 @@
 import React from "react";
-import { Card } from "../../Card.styled";
-import { Button } from "../../Button.styled";
-import { ImageCard } from "../../ImageCard.styled";
+import { Card } from "../../UI/Card.styled";
+import { Button } from "../../UI/Button.styled";
+import { ImageCard } from "../../UI/ImageCard.styled";
 const SectionSix = ({ styles, UI }) => {
   return (
     <>
@@ -10,7 +10,7 @@ const SectionSix = ({ styles, UI }) => {
         {/* <Card bd={"1px solid red"}> */}
         <ImageCard
           ps={"absolute"}
-          pstp={"68rem"}
+          pstp={"83rem"}
           pslf={"6rem"}
           src={UI.CircledNft1}
           height={"2rem"}
@@ -22,7 +22,7 @@ const SectionSix = ({ styles, UI }) => {
         {/* </Card> */}
         <ImageCard
           ps={"absolute"}
-          pstp={"72rem"}
+          pstp={"87rem"}
           pslf={"13rem"}
           src={UI.CircledNft2}
           height={"2rem"}
@@ -33,7 +33,7 @@ const SectionSix = ({ styles, UI }) => {
         />
         <ImageCard
           ps={"absolute"}
-          pstp={"76rem"}
+          pstp={"91rem"}
           pslf={"21rem"}
           src={UI.CircledNft3}
           height={"2rem"}
@@ -44,7 +44,7 @@ const SectionSix = ({ styles, UI }) => {
         />
         <ImageCard
           ps={"absolute"}
-          pstp={"72rem"}
+          pstp={"87rem"}
           pslf={"30rem"}
           src={UI.CircledNft4}
           height={"2rem"}
@@ -55,7 +55,7 @@ const SectionSix = ({ styles, UI }) => {
         />
         <ImageCard
           ps={"absolute"}
-          pstp={"68rem"}
+          pstp={"83rem"}
           pslf={"37rem"}
           src={UI.CircledNft5}
           height={"2rem"}

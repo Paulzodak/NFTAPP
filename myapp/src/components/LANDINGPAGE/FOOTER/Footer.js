@@ -1,8 +1,8 @@
 import React from "react";
-import { Card } from "../../Card.styled";
-import { CardList } from "../../CardList.styled";
-import { CardLink } from "../../Link.styled";
-import { ImageCard } from "../../ImageCard.styled";
+import { Card } from "../../UI/Card.styled";
+import { CardList } from "../../UI/CardList.styled";
+import { CardLink } from "../../UI/Link.styled";
+import { ImageCard } from "../../UI/ImageCard.styled";
 
 const Footer = ({ styles, UI }) => {
   return (

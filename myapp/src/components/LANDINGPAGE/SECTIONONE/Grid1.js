@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { Card } from "../../Card.styled";
-import { ImageCard } from "../../ImageCard.styled";
+import { Card } from "../../UI/Card.styled";
+import { ImageCard } from "../../UI/ImageCard.styled";
 const Grid1 = ({ content, styles }) => {
   // ------------------------
   const [arrowHoverMargin, setArrowHoverMargin] = useState("0rem 1rem");

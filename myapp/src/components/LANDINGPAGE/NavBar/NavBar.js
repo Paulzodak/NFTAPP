@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import { useState } from "react";
-import { Card } from "../../Card.styled";
-import { CardInline } from "../../Card.styled2";
-import { ImageCard } from "../../ImageCard.styled";
-import { CardLink } from "../../Link.styled";
-import { Button } from "../../Button.styled";
+import { Card } from "../../UI/Card.styled";
+import { CardInline } from "../../UI/Card.styled2";
+import { ImageCard } from "../../UI/ImageCard.styled";
+import { CardLink } from "../../UI/Link.styled";
+import { Button } from "../../UI/Button.styled";
 const NavBar = ({ content, styles }) => {
   return (
     <>
