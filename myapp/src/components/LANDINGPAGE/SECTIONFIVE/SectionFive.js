@@ -70,33 +70,31 @@ const SectionFive = ({ content, styles, UI }) => {
           }
           classNames="fade"
         >
-          {!element.toggle ? (
-            // <Card
-            //   onMouseOut={() => hoverOutHandler(index)}
-            //   onMouseOver={() => hoverInHandler(index)}
-            // >
-            <CommentItem
-              inHandler={hoverInHandler}
-              outHandler={hoverOutHandler}
-              key={element.id}
-              color={HeadlineProps.h1.color}
-              element={element}
-            />
-          ) : (
-            // </Card>
-            // <Card
-            //   onMouseOut={() => hoverOutHandler(index)}
-            //   onMouseOver={() => hoverInHandler(index)}
-            // >
-            <CommentItem2
-              inHandler={hoverInHandler}
-              outHandler={hoverOutHandler}
-              key={element.id}
-              color={HeadlineProps.h1.color}
-              element={element}
-            />
-            // </Card>
-          )}
+          <>
+            {!element.toggle ? (
+              <Card
+                onMouseOut={() => hoverOutHandler(index)}
+                onMouseOver={() => hoverInHandler(index)}
+              >
+                <CommentItem
+                  key={element.id}
+                  color={HeadlineProps.h1.color}
+                  element={element}
+                />
+              </Card>
+            ) : (
+              <Card
+                onMouseOut={() => hoverOutHandler(index)}
+                onMouseOver={() => hoverInHandler(index)}
+              >
+                <CommentItem2
+                  key={element.id}
+                  color={HeadlineProps.h1.color}
+                  element={element}
+                />
+              </Card>
+            )}
+          </>
         </CSSTransition>
       </SwitchTransition>
     </Card>
