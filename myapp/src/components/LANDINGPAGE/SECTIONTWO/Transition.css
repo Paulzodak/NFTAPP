@@ -1,37 +1,37 @@
 /* .fade-enter {
   opacity: 0;
   height: 0%;
-  transition: 0.1s;
+  transition: 0.05s;
 }
 .fade-exit {
   opacity: 0.1;
   height: 80%;
-  transition: 0.15s;
+  transition: 0.05s;
 }
 .fade-enter-active {
   opacity: 1;
   height: 80%;
-  transition: 0.15s;
+  transition: 0.05s;
 }
 .fade-exit-active {
   opacity: 0;
   height: 0%;
-  transition: 0.15s;
+  transition: 0.05s;
 } */
-.fadeb-appear,
-.fadeb-enter {
+.fadea-appear,
+.fadea-enter {
   opacity: 0;
   z-index: 1;
 }
-.fadeb-appear-active,
-.fadeb-enter.fadeb-enter-active {
+.fadea-appear-active,
+.fadea-enter.fadea-enter-active {
   opacity: 1;
   transition: opacity 450ms linear 250ms;
 }
-.fadeb-exit {
+.fadea-exit {
   opacity: 1;
 }
-.fadeb-exit.fadeb-exit-active {
+.fadea-exit.fadea-exit-active {
   opacity: 0;
   transition: opacity 150ms linear;
 }

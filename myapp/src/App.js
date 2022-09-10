@@ -27,9 +27,14 @@ import AuctioNft1 from "./images/auctions/card1.svg";
 import AuctioNft2 from "./images/auctions/card2.svg";
 import AuctioNft3 from "./images/auctions/card3.svg";
 
+import RecentlyAddedNft1 from "./images/Recently added/Ra1.svg";
+import RecentlyAddedNft2 from "./images/Recently added/Ra2.svg";
+import RecentlyAddedNft3 from "./images/Recently added/Ra3.svg";
+
 import JediPicture from "./images/drawjedi.svg";
 import picture44 from "./images/44.svg";
 import YellowGirlPicture from "./images/Yellowgirl.svg";
+import ErrModal from "./components/UI/Modal/ErrModal";
 
 const App = () => {
   const UI = {
@@ -56,6 +61,9 @@ const App = () => {
     colors: {
       textAlt: "#5A5A5A",
       purple: "#744DE6",
+      altPurple: " #7851EC",
+      white: "white",
+      NFTborder: "#B9B9B9",
     },
   };
   const Contents = {
@@ -72,6 +80,7 @@ const App = () => {
     trendingAuctions: [
       {
         id: 0,
+        state: false,
         tag: "A",
         day: 74,
         user: "@Mark Rise",
@@ -86,6 +95,7 @@ const App = () => {
       },
       {
         id: 1,
+        state: true,
         tag: "A",
         day: 74,
         user: "@Mark Rise",
@@ -100,6 +110,7 @@ const App = () => {
       },
       {
         id: 2,
+        state: false,
         tag: "A",
         day: 74,
         user: "@Mark Rise",
@@ -111,6 +122,32 @@ const App = () => {
           likes: "63.1K",
           share: "24.6K",
         },
+      },
+    ],
+    RecentlyAdded: [
+      {
+        id: 0,
+        image: RecentlyAddedNft1,
+        tag: "A",
+        name: "Gorilla Mascot",
+        user: "@MarkoHatta",
+        value: 15.97,
+      },
+      {
+        id: 1,
+        image: RecentlyAddedNft2,
+        tag: "A",
+        name: "Gorilla Mascot",
+        user: "@MarkoHatta",
+        value: 15.97,
+      },
+      {
+        id: 2,
+        image: RecentlyAddedNft3,
+        tag: "A",
+        name: "Gorilla Mascot",
+        user: "@MarkoHatta",
+        value: 15.97,
       },
     ],
     SectionOneContents: [
@@ -141,6 +178,10 @@ const App = () => {
       },
     ],
   };
+  const [errState, setErrorState] = useState(false);
+  const [trendingAuctions, setTrendingAuctions] = useState(
+    Contents.trendingAuctions
+  );
 
   return (
     <>
@@ -158,7 +199,14 @@ const App = () => {
           <div></div>
         </div>
       </div>
-      <LandingPage UI={UI} styles={styles} content={Contents} />
+      {errState ? <ErrModal /> : null}
+      <LandingPage
+        setTrendingAuctions={setTrendingAuctions}
+        trendingAuctions={trendingAuctions}
+        UI={UI}
+        styles={styles}
+        content={Contents}
+      />
       {/* <LandingPage content={Contents} /> */}
     </>
   );

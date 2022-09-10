@@ -2,7 +2,13 @@ import React from "react";
 import { Card } from "../../UI/Card.styled";
 import Grid1 from "./Grid1";
 import Grid2 from "./Grid2";
-const SectionTwo = ({ UI, styles, content }) => {
+const SectionTwo = ({
+  trendingAuctions,
+  setTrendingAuctions,
+  UI,
+  styles,
+  content,
+}) => {
   return (
     <>
       <Card
@@ -13,7 +19,13 @@ const SectionTwo = ({ UI, styles, content }) => {
         height={"24rem"}
       >
         <Grid1 UI={UI} styles={styles} />
-        <Grid2 styles={styles} content={content} UI={UI} />
+        <Grid2
+          setTrendingAuctions={setTrendingAuctions}
+          trendingAuctions={trendingAuctions}
+          styles={styles}
+          content={content}
+          UI={UI}
+        />
       </Card>
     </>
   );

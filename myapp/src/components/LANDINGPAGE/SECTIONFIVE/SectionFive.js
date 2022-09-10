@@ -51,30 +51,44 @@ const SectionFive = ({ content, styles, UI }) => {
   ];
   const [usersComments, setUsersComments] = useState(dummyUsersComments);
   const hoverInHandler = (index) => {
-    const CopiedComments = usersComments;
-    CopiedComments[index].toggle = true;
-    setUsersComments([...CopiedComments]);
+    setTimeout(() => {
+      const CopiedComments = usersComments;
+      CopiedComments[index].toggle = true;
+      setUsersComments([...CopiedComments]);
+    }, 200);
+    // const CopiedComments = usersComments;
+    // CopiedComments[index].toggle = true;
+    // setUsersComments([...CopiedComments]);
   };
   const hoverOutHandler = (index) => {
-    const CopiedComments = usersComments;
-    CopiedComments[index].toggle = false;
-    setUsersComments([...CopiedComments]);
+    setTimeout(() => {
+      const CopiedComments = usersComments;
+      CopiedComments[index].toggle = false;
+      setUsersComments([...CopiedComments]);
+    }, 200);
+    // const CopiedComments = usersComments;
+    // CopiedComments[index].toggle = false;
+    // setUsersComments([...CopiedComments]);
   };
   const renderedContents = usersComments.map((element, index) => (
-    <Card>
+    <Card
+      onMouseEnter={() => hoverInHandler(index)}
+      onMouseLeave={() => hoverOutHandler(index)}
+    >
       <SwitchTransition>
         <CSSTransition
           key={element.toggle}
           addEndListener={(node, done) =>
             node.addEventListener("transitionend", done, false)
           }
-          classNames="fade"
+          classNames="fadeb"
         >
           <>
             {!element.toggle ? (
               <Card
-                onMouseOut={() => hoverOutHandler(index)}
-                onMouseOver={() => hoverInHandler(index)}
+              // bd={"1px solid red"}
+              // onMouseOut={() => hoverOutHandler(index)}
+              // onMouseOver={() => hoverInHandler(index)}
               >
                 <CommentItem
                   key={element.id}
@@ -84,8 +98,9 @@ const SectionFive = ({ content, styles, UI }) => {
               </Card>
             ) : (
               <Card
-                onMouseOut={() => hoverOutHandler(index)}
-                onMouseOver={() => hoverInHandler(index)}
+              // bd={"1px solid red"}
+              // onMouseOut={() => hoverOutHandler(index)}
+              // onMouseOver={() => hoverInHandler(index)}
               >
                 <CommentItem2
                   key={element.id}
@@ -99,7 +114,7 @@ const SectionFive = ({ content, styles, UI }) => {
       </SwitchTransition>
     </Card>
   ));
-  console.log(usersComments);
+  // console.log(usersComments);
   return (
     <Card mg={"0rem 2rem"} bd={"0px solid red"} height={"15rem"}>
       <Headlines HeadlineProps={HeadlineProps} />
@@ -110,7 +125,7 @@ const SectionFive = ({ content, styles, UI }) => {
         gridC={"30% 30% 30%"}
         gridjc={"space-between"}
         height={"9rem"}
-        bd={"0px solid red"}
+        // bd={"1px solid red"}
       >
         {renderedContents}
       </Card>

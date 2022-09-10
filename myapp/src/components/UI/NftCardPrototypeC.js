@@ -3,7 +3,7 @@ import { Card } from "./Card.styled";
 import { ImageCard } from "./ImageCard.styled";
 import { CardSpan } from "./CardSpan.styled";
 
-const NftCardPrototypeA = ({ element, content, styles }) => {
+const NftCardPrototypeC = ({ element, content, styles }) => {
   return (
     <Card
       bg={"white"}
@@ -20,7 +20,7 @@ const NftCardPrototypeA = ({ element, content, styles }) => {
         dp={"inline-block"}
         mg={"0.5rem"}
       >
-        DAY {element.day}
+        {element.name}
       </Card>
       <Card
         cl={styles.colors.textAlt}
@@ -32,14 +32,17 @@ const NftCardPrototypeA = ({ element, content, styles }) => {
         {element.user}
       </Card>
       <ImageCard
-        mg={"0rem 1rem"}
+        mg={"0rem 5%"}
         dp={"inline"}
         // bg={"red"}
         src={element.image}
         height={"75%"}
-        width={"75%"}
+        width={"90%"}
       />
       <Card mg={"0rem 1rem"} height={"10%"} bd={"0px solid red"}>
+        <CardSpan ps={"relative"} pstp={"0.008rem"} fs={"0.6rem"}>
+          <b> FIXED PRICE</b>
+        </CardSpan>
         <CardSpan float={"left"} fs={"0.5rem"}>
           {element.RemainingTime}
         </CardSpan>
@@ -48,11 +51,8 @@ const NftCardPrototypeA = ({ element, content, styles }) => {
         </CardSpan>
         <br />
         <Card cl={styles.colors.textAlt} ps={"relative"} pstp={"-0.5rem"}>
-          <CardSpan fs={"0.4rem"} float={"left"}>
-            Remaining Time
-          </CardSpan>
           <CardSpan fs={"0.4rem"} float={"right"}>
-            Highest Bid
+            Instant Price
           </CardSpan>
         </Card>
       </Card>
@@ -60,4 +60,4 @@ const NftCardPrototypeA = ({ element, content, styles }) => {
   );
 };
 
-export default NftCardPrototypeA;
+export default NftCardPrototypeC;

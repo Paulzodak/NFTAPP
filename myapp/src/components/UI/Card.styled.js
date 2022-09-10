@@ -1,6 +1,7 @@
 import styled from "styled-components";
 export const Card = styled.div`
   justify-content: ${(props) => props.gridjc};
+  backdrop-filter: ${(props) => props.bdft};
   float: ${(props) => props.float};
   line-height: ${(props) => props.lh};
   box-shadow: ${(props) => props.bs};
@@ -33,6 +34,7 @@ export const Card = styled.div`
   -o-transform: rotate(${(props) => props.rdeg});
   transform: rotate(${(props) => props.rdeg});
   box-sizing: border-box;
+  z-index: ${(props) => props.zindex};
   &:hover {
     color: ${(props) => props.hvcl};
     background-color: ${(props) => props.hvbg};

@@ -8,8 +8,9 @@ const Grid1 = ({ content, styles }) => {
   const [borderLength, setBorderLength] = useState("-89%");
   // ------------------------
   return (
-    <Card>
-      <Card mg={"5% 0"} height={"5%"}>
+    <Card bd={"0px solid red"} height={"20rem"}>
+      {/* ---------------------------- */}
+      <Card mg={"1rem 0"} height={"1rem"}>
         <ImageCard
           // bg={"red"}
           // va={"sub"}
@@ -18,7 +19,7 @@ const Grid1 = ({ content, styles }) => {
           dp={"inline"}
           src={content.SectionOneContents[0]}
         />
-        {/* --------------STARTED-------------- */}
+
         <Card
           // height={"80%"}
           // bd={"1px solid red"}
@@ -33,7 +34,8 @@ const Grid1 = ({ content, styles }) => {
         </Card>
       </Card>
 
-      <Card fs={"2rem"} mg={"5% 0"} height={"35%"}>
+      {/* ------------------------------------- */}
+      <Card fs={"2rem"} mg={"1rem 0"} height={"5rem"}>
         {/* ------------DISCOVER---------- */}
         <Card cl={styles.colors.textAlt} dp={"inline"}>
           {" "}
@@ -54,8 +56,13 @@ const Grid1 = ({ content, styles }) => {
         <b>{content.SectionOneContents[5]}</b>
       </Card>
 
-      {/* ------------DIGITAL.....---------- */}
-      <Card fs={"0.7rem"} mg={"5% 0"} height={"14%"}>
+      {/* -------------------------------------- */}
+      <Card
+        fs={"0.7rem"}
+        mg={"3rem 0 0 0"}
+        // bd={"1px solid red"}
+        height={"2rem"}
+      >
         <Card cl={styles.colors.textAlt} dp={"inline"}>
           {content.SectionOneContents[6]}
         </Card>
@@ -72,8 +79,8 @@ const Grid1 = ({ content, styles }) => {
           setBorderLength("-89%");
         }}
         ovfx={"hidden"}
-        mg={"5% 0"}
-        height={"10%"}
+        mg={"1rem 0rem"}
+        height={"1.5rem"}
         // bd={"1px solid black"}
       >
         <b>{content.SectionOneContents[8]}</b>
@@ -93,8 +100,8 @@ const Grid1 = ({ content, styles }) => {
       {/* --------------------------------------------- */}
       <Card
         fs={"0.8rem"}
-        mg={"15% 0rem 0rem 0rem"}
-        height={"7%"}
+        mg={"1rem 0rem 0rem 0rem"}
+        height={"1.5rem"}
         // bd={"1px solid black"}
       >
         {/* ---------------SUPPORTED BY---------- */}

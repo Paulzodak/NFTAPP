@@ -4,7 +4,11 @@ import { Card } from "../../UI/Card.styled";
 const Grid2 = ({ content }) => {
   return (
     <Card bd={"0px solid red"}>
-      <ImageCard src={content.NftAuctions[0].image} />
+      <ImageCard
+        height={"18rem"}
+        width={"18rem"}
+        src={content.NftAuctions[0].image}
+      />
     </Card>
   );
 };
